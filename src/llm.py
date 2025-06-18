@@ -5,9 +5,9 @@ from src.prompt import system_instruction
 
 # Configure the API key
 load_dotenv()
-GEMINI_API_KEY=os.environ["GEMINI_KEY"] 
+# GEMINI_API_KEY=os.environ["GEMINI_KEY"] 
 # os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key='AIzaSyDkhGv3hNtK0o1NNFd7FDUAmRk0hDjUaWY')
 messages = [
     {"role": "system", "content": system_instruction}
 ]
